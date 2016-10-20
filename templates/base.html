@@ -1,0 +1,49 @@
+<html>
+<head>
+  <title>Video Game Hub</title>
+  <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
+  <style>
+    body{
+      padding-top: 60px;
+        }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse">
+   <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="#">Video Games</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar">
+       <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+          <ul class="dropdown-menu"> 
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+          </ul>
+        </li>
+       </ul>
+       <ul class="nav navbar-nav navbar-right">
+       </ul>
+    </div>
+   </div>
+  </nav>
+  <div class="container">
+       <h1>Video Games</h1>
+       <h2>Catalogue</h2>
+       <p>Here is a list of popular new releases.</p>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src={{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</body>
+</html>
